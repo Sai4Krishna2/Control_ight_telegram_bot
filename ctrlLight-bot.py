@@ -25,13 +25,13 @@ def value_send(value):
 def lighton(update, context):
   chat_id = update.message.chat_id
   context.bot.send_message(chat_id, text="Light has been turned ON")
-  context.bot.send_photo(chat_id, photo='https://i5.walmartimages.com/asr/e62054e3-f6a2-46ce-8d0e-efe72943f485_1.3044d777832a0e874651e80fe3fa1ca1.jpeg')
+  context.bot.send_photo(chat_id, photo='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Green_Light_Icon.svg/1200px-Green_Light_Icon.svg.png')
   value_send(1)
 #function to switch off the light and send value '0' to adafruit
 def lightoff(update, context):
   chat_id = update.message.chat_id
   context.bot.send_message(chat_id, text="Light has been turned OFF")
-  context.bot.send_photo(chat_id=update.effective_chat.id,photo='https://jooinn.com/images/isolated-light-bulb-1.jpg')
+  context.bot.send_photo(chat_id, photo='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Red_Light_Icon.svg/1200px-Red_Light_Icon.svg.png')
   value_send(0)
 # function to control the bot without giving commands
 def given_message(bot, update):
