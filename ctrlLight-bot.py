@@ -53,3 +53,4 @@ dp.add_handler(MessageHandler(Filters.text, given_message)) # Filters.text allow
 
 u.start_polling()  # starts polling updates from Telegram
 u.idle() # blocks until one of the signals are received and stops the updater
+ 
